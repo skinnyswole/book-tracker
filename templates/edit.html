@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Book</title>
+</head>
+<body>
+    <form action="{{ url_for('edit') }}" method="POST">
+        <label>Book Name:</label>
+        <input name="title" type="text" value="{{book.title}}">
+        <label>Book Author:</label>
+        <input name="author" type="text" value="{{book.author}}">
+        <label>Book Pages:</label>
+        <input name="pages" type="number" value="{{book.pages}}">
+        <label>Rating:</label>
+        <input name="rating" type="number" value="{{book.rating}}">
+        <label>Date Finished:</label>
+        <input name="date" type="date" value="{{book.date}}">
+        <input hidden="hidden" name="id" value="{{book.id}}">
+        <button type="submit">Submit Changes</button>
+    </form>
+</body>
+</html>

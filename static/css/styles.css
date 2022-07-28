@@ -1,0 +1,19 @@
+
+body {
+    color: white;
+    font-family: 'Montserrat';
+    line-height: 1.5;
+    text-align: left;
+}
+
+h1 {
+    font-family: 'Ubuntu';
+    text-size: 5rem;
+    font-weight: 900;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
